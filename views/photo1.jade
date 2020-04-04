@@ -1,0 +1,40 @@
+doctype html
+html
+  head
+    title Photo1
+    style.
+      @import url(./css/a.css);
+      @import url(./css/container.css);
+      @import url(./css/photo.css);
+      .content{
+      margin : 0;
+      text-align: center;
+      vertical-align:middle;
+      }
+      .outer{
+      padding : 20px;
+      margin : auto;
+      }
+  body
+    .content
+      br
+      br
+      .outer
+        .ver(style="background-image:url('./photo/ver1.jpg')")
+        .hor(style="background-image:url('./photo/hor1.jpg')")
+        .ver(style="background-image:url('./photo/ver2.jpg')")
+      br
+      .outer
+        .hor(style="background-image:url('./photo/hor2.jpg')")
+        .ver(style="background-image:url('./photo/ver3.jpg')")
+        .hor(style="background-image:url('./photo/hor3.jpg')")
+    br
+    br
+    div(style='text-align: center')
+      h2
+        u 1
+        &nbsp
+        a(href='photo2') 2
+        &nbsp
+        a(href='photo3') 3
+        &nbsp

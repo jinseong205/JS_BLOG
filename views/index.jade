@@ -1,0 +1,48 @@
+doctype html
+html
+  head
+    title Jinseong's Blog
+    meta(charset='UTF-8')
+    style.
+      @import url(./css/body.css);
+      @import url(./css/background.css);
+      @import url(./css/main_layout.css);
+      @import url(./css/a.css);
+      a{
+      text-decoration: none; color: black; opacity: 0.5;
+      };
+  body
+    #container
+      #header
+        -if (id)
+          h3
+            a(href ='./logout') logout
+        -else
+          h3
+            a(href='./register') sign in
+            a(href='./login') &nbsp&nbsp&nbsp&nbsplogin
+
+      #nav
+        #article
+          h2 JS's Blog
+          hr
+        h3
+          ul
+            br
+            li
+              a(href='./profile', target='content') Profile
+            br
+            li
+              a(href='./skill', target='content') Skill
+            br
+            li
+              a(href='./photo1', target='content') Photo
+            br
+            li 
+              a(href='./game', target = 'content') Game
+            br
+            li 
+              a(href='./visitor', target='content') Visitor
+            br
+      #content
+        iframe(src='./profile', width='100%', ,='', height='100%', name='content', frameboder='0px;')

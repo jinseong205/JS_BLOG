@@ -1,0 +1,55 @@
+doctype html
+html
+  head
+    title Profile
+    style.
+      @import url(./css/container);
+      @import url(./css/a.css);
+      .content {
+      margin: 0;
+      margin-top: 0%;
+      text-align: center;
+      vertical-align: middle;
+      }
+      .outer {
+      padding: 20px;
+      margin: 15px;
+      }
+      .thumbnail {
+      display: inline-block;
+      background-color: gray;
+      margin: 10px;
+      width: 200px;
+      height: 200px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      }
+      .thumbnail.logoRound {
+      background-color: white;
+      width: 80px;
+      height: 80px;
+      border-radius: 10%;
+      }
+      .thumbnail.circle {
+      border-radius: 100%;
+      }
+  body
+    .content
+      br
+      .outer
+        .thumbnail.circle(style="background-image:url('./img/js.png')")
+      .outer
+        h1  Jinseong Jeong
+        h2
+          b Tel
+          |       +82-10-4921-0199
+          br
+          b E-mail
+          |   jinseong769@naver.com
+          br
+      .outer
+        a(href='https://facebook.com/jinseong769/', target='_blank')
+          .thumbnail.logoRound(style="background-image:url('./img/facebook.png')")
+        a(href='https://www.instagram.com/jinseong__93/', target='_blank')
+          .thumbnail.logoRound(style="background-image:url('./img/instagram.png')")

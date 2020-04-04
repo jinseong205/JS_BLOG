@@ -1,0 +1,11 @@
+#content {
+    width : 50%;
+    height : 100%;
+    margin : 20%;
+    align : center;
+    border: 1px solid #bcbcbc;
+    background : rgba(255, 255,255, 0.7);
+}
+#article{
+    text-align : center;
+}

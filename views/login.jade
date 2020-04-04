@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title Login
+    meta(charset='UTF-8')
+    style.
+      @import url(./css/body.css);
+      @import url(./css/background.css);
+      @import url(./css/login_layout.css);
+      @import url(./css/a.css);
+  body
+    #container
+      #content
+        #article
+          h1 Login
+          br
+          form(action='login_auth', method='post')
+            | ID : 
+            input(type='text', name = 'id')
+            |                           PW : 
+            input(type='password',name = 'pw')
+            &nbsp&nbsp
+            input(type='submit', value='Login')
+          br
+          a(href='/') home
+          br
+          br

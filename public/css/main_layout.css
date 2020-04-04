@@ -1,0 +1,28 @@
+
+#header{
+    width : 100%;
+    text-align: right;
+}
+#container {
+    width: 90%;
+    height : 90%;
+    margin-top : 0%;
+    margin-right : 5%;
+    margin-left : 5%;
+}
+#nav {
+    width: 16%;
+    float: left;
+    background : rgba(255, 255,255, 0.7);
+    border: 1px solid #bcbcbc;
+} 
+#content {
+    width: 82%;
+    height : 700px;
+    float: right;
+    background : rgba(255, 255,255, 0.7);
+    border: 1px solid #bcbcbc;
+}
+#article{
+    text-align : center;
+}

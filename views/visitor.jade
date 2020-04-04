@@ -1,0 +1,38 @@
+doctype html
+html
+  head
+    title Vistor
+    meta(charset='UTF-8')
+    style.
+      @import url(./css/container);
+      @import url(./css/body.css);
+      @import url(./css/a.css);
+      .content{
+      margin : auto;
+      vertical-align:middle;
+      }
+  body
+    #container
+      #content
+        br
+        -if(u_id)
+            h3=u_id
+            form(action='visitor_process', method='get')
+             input(type='text', name='visitor', style='width:100%; height:50px;')
+             br
+             br
+             div(style='text-align:right;')
+              input(type='submit', value='Regist')
+        -else
+            h2
+            input(type='text', name='visitor', readonly, value = 'Please login',style='width:100%; height:50px; text-align:center')
+        
+        br
+        br
+        hr(width = '100%', border = 'solid')
+        -for(var i=0; i<docs.length; i++)
+          h3=docs[docs.length-i-1].id
+          input(type= 'text',style='width:100%; height:50px',readonly, value =docs[docs.length-i-1].content)
+        br
+        br
+        br
